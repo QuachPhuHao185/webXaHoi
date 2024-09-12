@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Ảnh và Bình Luận</title>
+    <link rel="stylesheet" href="/css/homePage.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><i>Mạng xả hội Chim Xanh</i></h1>
+            <nav>
+                <ul>  
+                    <li><a href="index.html">Thoát</a></li>
+                    <li><a href="chinhSach.html">Chính Sách</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="hopSide">
+           <ul>
+            <li><a href="homePage.html">Trang Nhà</a></li>
+            <li><a href="khamPha.html">Khám Phá</a></li>
+            <li><a href="theoDoi.html">Theo Dỏi</a></li>
+            <li><a href="thongBao.html">Thông Báo</a></li>
+            <li><a href="tinNhan.html">Tin Nhắn</a></li>
+            <li><a href="congDong.html">Cộng Đồng</a></li>
+            <li><a href="danhDau.html">Đánh Dấu</a></li>
+            <li><a href="profile.html">Cá Nhân</a></li>
+           </ul>
+        </div>
+        <div class="hopChinh">
+        <div class="container">
+        <div class="upLoad">
+            <h1>Chào mừng bạn đến với hợp tin nhắn của bạn</h1>
+            <h2>Thả một cái bình luận, chia sẽ một trải nghiệm...</h2>
+            <form id="uploadForm">
+            <input type="file" id="imageUpload" accept="image/*">
+            <input type="text" id="imageLabel" placeholder="Nhập nhãn cho ảnh...">
+            <button type="submit">Đăng Một Bài Mới</button>
+        </form>
+        </div>
+        <div id="gallery"></div>
+        </div>
+    </div>
+    <div class="quangCao">
+        <div><img src="/images/thongTin/anh1.jpg" width="400px" float="right"></div>
+        <div><img src="/images/thongTin/anh3.jpg" width="400px" float="right"></div>
+        <div><img src="/images/thongTin/anh4.jpg" width="400px" float="right"></div>
+    </div>
+    </main>
+    <script src="/javascript/homePage.js"></script>
+</body>
+</html>

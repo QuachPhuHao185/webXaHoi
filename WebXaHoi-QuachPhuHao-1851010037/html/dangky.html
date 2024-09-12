@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/dangky.css">
+    <title>Đăng Ký</title>
+</head>
+<body>
+    <header>
+        <h1><i>Mạng xả hội Chim Xanh</i></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Đăng Nhập</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="dangKy">
+            <h2>Đăng Ký Tài Khoản</h2>
+            <form name="formDK" onsubmit="DK()">
+                <label>Tên Tài Khoản</label>
+                <input type="text" id="usernames" placeholder="Nhập tên Của Bạn" required>
+                <label>Mật Khẩu</label>
+                <input type="password" id="pwd" placeholder="Nhập mật khẩu " required>
+                <label>Nhập Lại Mật Khẩu</label>
+                <input type="password" id="repwd" placeholder="Nhập mật khẩu lại lần nữa" required>
+                <label>Giơi Tính</label>
+                <input type="text" id="gender" placeholder="Nhập giới tính " required>
+                <label>Ngày Sinh</label>
+                <input type="text" id="birthday" placeholder="Nhập ngày sinh" required>
+                <label>Email</label>
+                <input type="text" id="email" name="email" placeholder="Nhập Email" required>
+                <input type="submit" id="btnDangKy" name="dangKy" value="Xác Nhận">
+            </form>
+        </div>
+        <script src="/javascript/dangKyDangNhap.js"></script>
+    </main>
+    <footer id="LienHe">
+        <h2>Liên Hệ</h2>
+        <address>
+            <strong>Web mạng xả hội thứ bảy Việt Nam</strong><br>
+            Địa chỉ: 123 Đường ABC, Thành phố Hồ Chi Minh<br>
+            Điện thoại: 0123-456-789<br>
+            Email: xahoicuata@gmail.com
+        </address>
+    </footer>
+</body>
+</html>

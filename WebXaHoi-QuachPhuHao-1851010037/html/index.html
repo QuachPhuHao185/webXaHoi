@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title>Đăng Nhập</title>
+</head>
+<body>
+    <header>
+        <h1><i>Mạng xả hội Chim Xanh</i></h1>
+            <nav>
+                <ul>  
+                    <li><a href="dangky.html">Đăng Ký</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="dangNhap">
+            <form onsubmit="DN()">
+                <h2>Đăng Nhập Tài Khoản</h2>
+                <label>Tên Tài Khoản</label>
+                <input type="text" id="usernames" placeholder="Nhập tên của bạn" required>
+                <label>Mật Khẩu</label>
+                <input type="password" id="pwd" placeholder="Nhập mật khẩu" required>
+                <input type="submit" name="login" value="Đăng Nhập">
+            </form>
+            <p>Nếu chưa có tài khoản thì <a href="dangKy.html">đăng Ký</a></p>
+        </div>
+        <script src="/javascript/dangKyDangNhap.js"></script>
+    </main>
+    <footer id="LienHe">
+        <h2>Liên Hệ</h2>
+        <address>
+            <strong>Web mạng xả hội thứ bảy Việt Nam</strong><br>
+            Địa chỉ: 123 Đường ABC, Thành phố Hồ Chi Minh<br>
+            Điện thoại: 0123-456-789<br>
+            Email: xahoicuata@gmail.com
+        </address>
+    </footer>
+</body>
+</html>

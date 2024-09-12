@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif; /* Sử dụng font Arial hoặc sans-serif cho toàn bộ trang */
+    margin: 0; /* Loại bỏ margin mặc định của trình duyệt */
+    padding: 0; /* Loại bỏ padding mặc định của trình duyệt */
+    background-color: white; /* Màu nền trắng cho toàn bộ trang */
+}
+
+header {
+    background-color: #0A68FE; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    padding: 20px; /* Padding 20px quanh header */
+    width: 97.5%; /* Chiều rộng 97.5% của phần tử chứa */
+    overflow: hidden; /* Xóa tràn (clear floating elements) */
+}
+
+header h1 {
+    margin: 0; /* Loại bỏ margin mặc định */
+    float: left; /* Đưa h1 sang bên trái */
+}
+
+nav {
+    float: right; /* Đưa nav sang bên phải */
+}
+
+nav ul {
+    list-style-type: none; /* Loại bỏ dấu chấm hoặc số trong danh sách */
+    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+nav ul li {
+    display: inline; /* Hiển thị các phần tử danh sách theo dạng dòng */
+    margin-right: 20px; /* Khoảng cách bên phải 20px */
+}
+
+nav ul li a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+}
+
+nav ul li a:hover {
+    color: #79dbe2; /* Thay đổi màu khi di chuột qua liên kết */
+}
+
+main {
+    padding: 70px; /* Padding 70px quanh nội dung của main */
+}
+
+.dangNhap {
+    width: 400px; /* Chiều rộng 400px của phần tử chứa đăng nhập */
+    height: 400px; /* Chiều cao 400px */
+    margin: auto; /* Canh giữa phần tử đăng nhập theo chiều ngang */
+    background-color: #8db0e4; /* Màu nền xanh nhạt */
+    border-radius: 15px; /* Bo tròn các góc với bán kính 15px */
+    display: flex; /* Hiển thị các phần tử con theo kiểu flexbox */
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    align-items: center; /* Canh giữa các phần tử con theo chiều ngang */
+    justify-content: center; /* Canh giữa các phần tử con theo chiều dọc */
+}
+
+h2 {
+    text-align: center; /* Canh giữa tiêu đề h2 */
+    padding-top: 1px; /* Padding trên cùng 1px */
+}
+
+form {
+    width: 300px; /* Chiều rộng 300px của biểu mẫu */
+}
+
+label {
+    display: flex; /* Hiển thị các phần tử con của label theo kiểu flexbox */
+    margin-top: 25px; /* Khoảng cách trên cùng 25px */
+    font-size: 16px; /* Kích thước chữ 16px */
+}
+
+input {
+    width: 92%; /* Chiều rộng 92% của phần tử chứa */
+    border: 2px solid gray; /* Viền xám với độ dày 2px */
+    border-radius: 6px; /* Bo tròn các góc viền với bán kính 6px */
+    padding: 10px; /* Padding 10px */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+    outline: none; /* Loại bỏ đường viền khi phần tử được chọn */
+}
+
+input[type="submit"] {
+    margin-top: 27px; /* Khoảng cách trên cùng 27px */
+    width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    height: 40px; /* Chiều cao 40px */
+    color: #fff; /* Màu chữ trắng */
+    background-color: #007bff; /* Màu nền xanh dương */
+    font-size: 15px; /* Kích thước chữ 15px */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Thay đổi màu nền khi di chuột qua nút gửi */
+}
+
+p {
+    text-align: center; /* Canh giữa văn bản */
+    font-size: 18px; /* Kích thước chữ 18px */
+}
+
+/*---------------------------------kết thúc main--------------------------------------*/
+
+footer {
+    background-color: #015CE0; /* Màu nền xanh dương đậm */
+    color: #fff; /* Màu chữ trắng */
+    width: 97.5%; /* Chiều rộng 97.5% của phần tử chứa */
+    padding: 10px; /* Padding 10px quanh footer */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+footer address {
+    font-style: normal; /* Loại bỏ kiểu chữ nghiêng mặc định cho address */
+}
+
+/* Dành cho màn hình nhỏ */
+@media screen and (max-width: 400px) and (max-height: 686px) {
+    header, footer {
+        padding: 15px; /* Padding 15px quanh header và footer */
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    }
+
+    main {
+        padding: 20px; /* Padding 20px quanh nội dung của main */
+    }
+
+    .dangNhap {
+        width: 100%; /* Chiều rộng 100% của phần tử chứa đăng nhập */
+        height: auto; /* Chiều cao tự động */
+        padding: 20px; /* Padding 20px */
+        margin: 10px 0; /* Khoảng cách 10px trên và dưới */
+    }
+
+    form {
+        width: 90%; /* Chiều rộng 90% của biểu mẫu */
+    }
+
+    input {
+        width: 100%; /* Chiều rộng 100% của phần tử input */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Khoảng cách bên phải 10px */
+    }
+
+    .hopTong {
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+        height: auto; /* Chiều cao tự động */
+        flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    }
+
+    .so {
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+        height: auto; /* Chiều cao tự động */
+        margin-bottom: 10px; /* Khoảng cách dưới cùng 10px */
+    }
+}

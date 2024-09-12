@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif; /* Sử dụng font Arial hoặc sans-serif cho toàn bộ trang */
+    margin: 0; /* Loại bỏ margin mặc định của trình duyệt */
+    padding: 0; /* Loại bỏ padding mặc định của trình duyệt */
+}
+
+header {
+    background-color: #0A68FE; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    padding: 20px; /* Padding 20px quanh header */
+    overflow: hidden; /* Xóa tràn (clear floating elements) */
+    width: 97.5%;
+}
+
+header h1 {
+    margin: 0; /* Loại bỏ margin mặc định */
+    float: left; /* Đưa h1 sang bên trái */
+}
+
+nav {
+    float: right; /* Đưa nav sang bên phải */
+}
+
+nav ul {
+    list-style-type: none; /* Loại bỏ dấu chấm hoặc số trong danh sách */
+    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+nav ul li {
+    display: inline; /* Hiển thị các phần tử danh sách theo dạng dòng */
+    margin-right: 20px; /* Khoảng cách bên phải 20px */
+}
+
+nav ul li a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+}
+
+nav ul li a:hover {
+    color: #29f8dd; /* Thay đổi màu khi di chuột qua liên kết */
+}
+
+/*-------------------------------Phần bắt đầu cho main---------------------------------- */
+
+main {
+    background-color: white; /* Màu nền trắng */
+    height: 100vh; /* Chiều cao 100% chiều cao viewport */
+    width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    padding: 20px; /* Padding 20px quanh nội dung chính */
+    align-items: center; /* Canh giữa các phần tử con theo chiều dọc (flexbox) */
+    justify-content: center; /* Canh giữa các phần tử con theo chiều ngang (flexbox) */
+    font-family: sans-serif; /* Sử dụng font sans-serif cho nội dung chính */
+}
+
+h2 {
+    text-align: center; /* Canh giữa tiêu đề h2 */
+    padding-top: 30px; /* Padding trên cùng 30px */
+}
+
+form {
+    padding: 0px 35px; /* Padding bên trái và phải 35px */
+    border-radius: 8px; /* Bo tròn các góc với bán kính 8px */
+    align-items: center; /* Canh giữa các phần tử con theo chiều dọc (flexbox) */
+}
+
+.dangKy {
+    width: 450px; /* Chiều rộng 450px */
+    height: 640px; /* Chiều cao 640px */
+    margin: auto; /* Canh giữa phần tử đăng ký theo chiều ngang */
+    background-color: #8db0e4; /* Màu nền xanh nhạt */
+    border-radius: 10px; /* Bo tròn các góc với bán kính 10px */
+}
+
+form {
+    width: 300px; /* Chiều rộng 300px của biểu mẫu */
+    margin-left: 20px; /* Khoảng cách bên trái 20px */
+}
+
+form label {
+    display: flex; /* Hiển thị các phần tử con của label theo kiểu flexbox */
+    margin-top: 20px; /* Khoảng cách trên cùng 20px */
+    font-size: 16px; /* Kích thước chữ 16px */
+}
+
+select {
+    width: 343px; /* Chiều rộng 343px */
+    border: 2px solid gray; /* Viền xám với độ dày 2px */
+    border-radius: 6px; /* Bo tròn các góc viền với bán kính 6px */
+    padding: 10px 20px; /* Padding 10px trên và dưới, 20px trái và phải */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+    outline: none; /* Loại bỏ đường viền khi phần tử được chọn */
+}
+
+input {
+    width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    border: 2px solid gray; /* Viền xám với độ dày 2px */
+    border-radius: 6px; /* Bo tròn các góc viền với bán kính 6px */
+    padding: 10px 20px; /* Padding 10px trên và dưới, 20px trái và phải */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+    outline: none; /* Loại bỏ đường viền khi phần tử được chọn */
+}
+
+input[type="submit"] {
+    margin-left: 20px; /* Khoảng cách bên trái 20px */
+    margin-top: 25px; /* Khoảng cách trên cùng 25px */
+    width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    height: 40px; /* Chiều cao 40px */
+    color: #fff; /* Màu chữ trắng */
+    background-color: #007bff; /* Màu nền xanh dương */
+    font-size: 15px; /* Kích thước chữ 15px */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Thay đổi màu nền khi di chuột qua nút gửi */
+}
+
+button {
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Padding 10px trên và dưới, 20px trái và phải */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+    border-radius: 7%; /* Bo tròn các góc với tỷ lệ 7% */
+    background-color: #1962b6; /* Màu nền xanh dương đậm */
+}
+
+button:hover {
+    background-color: #1983f5; /* Thay đổi màu nền khi di chuột qua nút */
+}
+
+p {
+    text-align: center; /* Canh giữa văn bản */
+    font-size: 18px; /* Kích thước chữ 18px */
+}
+
+/*---------------------------------kết thúc main--------------------------------------*/
+
+footer {
+    background-color: #015CE0; /* Màu nền xanh dương đậm */
+    color: #fff; /* Màu chữ trắng */
+    padding: 20px; /* Padding 20px quanh footer */
+    text-align: center; /* Canh giữa văn bản */
+    width: 97.5%;
+}
+
+footer address {
+    font-style: normal; /* Loại bỏ kiểu chữ nghiêng mặc định cho address */
+}
+
+/* Dành cho màn hình nhỏ */
+@media screen and (max-width: 400px) {
+    .dangKy {
+        width: 90%; /* Chiều rộng 90% của phần tử chứa */
+        height: auto; /* Chiều cao tự động */
+        margin: 10px; /* Khoảng cách 10px quanh phần tử đăng ký */
+        padding: 20px; /* Padding 20px để tránh nội dung chạm sát vào cạnh */
+        box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước phần tử */
+    }
+
+    form {
+        width: 80%; /* Chiều rộng 80% của biểu mẫu */
+        margin-left: auto; /* Loại bỏ khoảng trống bên trái */
+        margin-right: auto; /* Canh giữa biểu mẫu */
+    }
+
+    nav {
+        margin-right: 20px; /* Khoảng cách bên phải 20px */
+    }
+
+    select, input {
+        width: 80%; /* Chiều rộng 80% của các phần tử form */
+    }
+
+    input[type="submit"], button {
+        width: 80%; /* Chiều rộng 80% của các nút */
+        margin-left: 0; /* Loại bỏ khoảng trống bên trái */
+    }
+
+    body, html {
+        overflow-x: hidden; /* Ngăn chặn thanh cuộn ngang toàn trang */
+    }
+
+    main {
+        padding: 10px; /* Padding 10px để phù hợp với màn hình nhỏ */
+    }
+}

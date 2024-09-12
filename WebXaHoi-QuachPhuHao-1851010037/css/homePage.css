@@ -1,0 +1,279 @@
+
+body {
+    font-family: Arial, sans-serif; /* Sử dụng font Arial hoặc sans-serif cho toàn bộ trang */
+    margin: 0; /* Loại bỏ margin mặc định của trình duyệt */
+    padding: 0; /* Loại bỏ padding mặc định của trình duyệt */
+}
+/* -----------------------------Phàn header trên đầu---------------------------*/
+header {
+    background-color: #0A68FE; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    padding: 20px; /* Padding 20px */
+    overflow: hidden; /* Xóa tràn (clear floating elements) */
+    width: 97.5%; /* Chiều rộng 97.5% của phần tử chứa */
+}
+header h1 {
+    margin: 0; /* Loại bỏ margin mặc định */
+    float: left; /* Đưa h1 sang bên trái */
+}
+nav {
+    float: right; /* Đưa nav sang bên phải */
+}
+
+nav ul {
+    list-style-type: none; /* Loại bỏ dấu chấm hoặc số trong danh sách */
+    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+nav ul li {
+    display: inline; /* Hiển thị các phần tử danh sách theo dạng dòng */
+    margin-right: 20px; /* Khoảng cách bên phải 20px */
+}
+
+nav ul li a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+}
+
+nav ul li a:hover {
+    color: #29f8dd; /* Thay đổi màu khi di chuột qua */
+}
+
+/*-------------------------------Phần bắt đầu cho main---------------------------------- */
+
+main {
+    display: flex; /* Hiển thị các phần tử con của main theo kiểu flexbox */
+    justify-content: space-between; /* Phân phối không gian đều giữa các phần tử con */
+}
+
+/* ------------------------------------phần SideBar---------------------------------------*/
+
+.hopSide {
+    display: flex; /* Hiển thị các phần tử con của hopSide theo kiểu flexbox */
+    background-color: #0056b3; /* Màu nền xanh dương */
+    color: white; /* Màu chữ trắng */
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    width: 15%; /* Chiều rộng 15% của phần tử chứa */
+    padding: 25px;
+    text-decoration: none; /* Loại bỏ gạch chân cho các liên kết */
+}
+
+.hopSide ul a {
+    text-decoration: none; /* Loại bỏ gạch chân cho các liên kết trong danh sách */
+    display: block; /* Hiển thị liên kết như một khối để chiếm toàn bộ chiều rộng */
+    width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    line-height: 65px; /* Chiều cao dòng 65px */
+    font-size: 20px; /* Kích thước chữ 20px */
+    color: white; /* Màu chữ trắng */
+    padding-left: 10px; /* Padding bên trái 10px */
+    transition: 0.25s; /* Hiệu ứng chuyển đổi trong 0.25 giây */
+}
+
+.hopSide ul li {
+    list-style: none; /* Loại bỏ dấu chấm hoặc số trong danh sách */
+}
+
+.hopSide ul li:hover a {
+    padding-left: 50px; /* Tăng padding bên trái khi di chuột qua liên kết */
+}
+
+/* --------------------------------------phần nội dung chính -----------------------------*/
+
+.hopChinh {
+    display: flex; /* Hiển thị các phần tử con của hopChinh theo kiểu flexbox */
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    width: 65%;
+}
+.hopChinh h2{
+    margin-left: 1cm;
+}
+.upLoad{
+    margin-left: 1cm;
+}
+.upLoad input {
+    width: 92%; /* Chiều rộng 92% của phần tử chứa */
+    border: 2px solid gray; /* Viền xám với độ dày 2px */
+    border-radius: 6px; /* Bo tròn các góc viền với bán kính 6px */
+    padding: 10px; /* Padding 10px */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+    outline: none; /* Loại bỏ đường viền khi phần tử được chọn */
+}
+
+.upLoad button[type="submit"] {
+    margin-top: 0px; /* Loại bỏ margin trên cùng */
+    width: 96%; /* Chiều rộng 96% của phần tử chứa */
+    height: 40px; /* Chiều cao 40px */
+    color: #fff; /* Màu chữ trắng */
+    background-color: #007bff; /* Màu nền xanh dương */
+    font-size: 15px; /* Kích thước chữ 15px */
+}
+
+.quangCao {
+    display: flex; /* Hiển thị các phần tử con của quangCao theo kiểu flexbox */
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    padding: 20px; /* Padding 20px */
+    gap: 10px; /* Khoảng cách giữa các phần tử con 10px */
+}
+
+.container {
+    background-color: #fff; /* Màu nền trắng */
+    border-radius: 8px; /* Bo tròn các góc với bán kính 8px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng với độ mờ 10px */
+    width: 100%; /* Chiều rộng 100% của phần tử chứa */
+    max-width: 600px; /* Chiều rộng tối đa 600px */
+}
+
+#gallery {
+    margin-top: 20px; /* Khoảng cách trên cùng 20px */
+}
+
+.image-container {
+    margin-left: 1cm; /* Định vị phần tử so với phần tử chứa */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng 20px */
+}
+
+.image-container img {
+    max-width: 100%; /* Chiều rộng tối đa 100% của phần tử chứa */
+    border-radius: 8px; /* Bo tròn các góc với bán kính 8px */
+}
+.image-label {
+    font-size: 20px; /* Kích thước chữ 20px */
+}
+
+.comment-form {
+    margin-top: 10px; /* Khoảng cách trên cùng 10px */
+}
+
+.comment-form input {
+    width: calc(100% - 90px); /* Chiều rộng 100% trừ 90px */
+    padding: 5px; /* Padding 5px */
+    border: 1px solid #ccc; /* Viền xám nhạt */
+    border-radius: 4px; /* Bo tròn các góc với bán kính 4px */
+}
+
+.comment-form button {
+    padding: 5px; /* Padding 5px */
+    border: none; /* Loại bỏ viền */
+    background-color: #007bff; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    border-radius: 4px; /* Bo tròn các góc với bán kính 4px */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+}
+
+.comment-form button:hover {
+    background-color: #0056b3; /* Thay đổi màu nền khi di chuột qua */
+}
+
+.comments {
+    margin-top: 10px; /* Khoảng cách trên cùng 10px */
+}
+
+.comment {
+    background-color: #f9f9f9; /* Màu nền xám nhạt */
+    padding: 5px; /* Padding 5px */
+    border-radius: 4px; /* Bo tròn các góc với bán kính 4px */
+    margin-bottom: 5px; /* Khoảng cách dưới cùng 5px */
+}
+/*---------------------Phần html chính sách----------------------*/
+.hopChinhSach{
+    padding-left: 1cm;
+}
+
+ /*---------------------------------kết thúc main--------------------------------------*/
+.timkiem input{
+    width: 76%; /* Chiều rộng 92% của phần tử chứa */
+    border: 2px solid gray; /* Viền xám với độ dày 2px */
+    border-radius: 25px; /* Bo tròn các góc viền với bán kính 6px */
+    padding: 10px; /* Padding 10px */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua */
+    outline: none; /* Loại bỏ đường viền khi phần tử được chọn */
+    margin-left: 1cm;
+}
+.timkiem button{
+    border-radius: 25px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+}
+.timkiem button:hover{
+    background-color: #113963;
+}
+.timkiem h2{
+    margin-left: 1cm;
+}
+/* Dành cho màn hình nhỏ */
+@media screen and (max-width: 400px) and (max-height: 686px) {
+    header, footer {
+        padding: 10px; /* Padding 10px */
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+        margin: 0; /* Loại bỏ margin */
+        box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến width */
+    }
+
+    nav ul li {
+        display: row; /* Hiển thị các phần tử danh sách theo dạng khối */
+        margin: 10px 0; /* Khoảng cách 10px trên và dưới */
+        text-align: center; /* Canh giữa văn bản */
+        padding: 5px;
+    }
+
+    body, html {
+        overflow-x: hidden; /* Ngăn chặn thanh cuộn ngang toàn trang */
+    }
+
+    main {
+        flex-direction: row; /* Sắp xếp các phần tử con theo hàng */
+        padding: 10px; /* Padding 10px */
+    }
+
+    .hopSide {
+        width: 75%; /* Chiều rộng 100% của phần tử chứa */
+        padding: 15px; /* Padding 15px */
+    }
+    .hopSide ul li{
+        margin-right: 10px;
+    }
+    .hopSide ul li a {
+        font-size: 14px; /* Kích thước chữ 14px */
+        padding-left: 0px; /* Padding bên trái 5px */
+        line-height: 40px; /* Chiều cao dòng 40px */
+    }
+
+    .hopChinh {
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+        padding: 10px; /* Padding 10px */
+    }
+
+    .quangCao {
+        display: none; /* Ẩn phần quangCao */
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+        padding: 10px; /* Padding 10px */
+    }
+
+    .container {
+        width: 100%; /* Chiều rộng 100% của phần tử chứa */
+        margin: 0 auto; /* Canh giữa và loại bỏ margin */
+    }
+
+    .container2 {
+        padding-top: 3cm; /* Padding trên cùng 3cm */
+    }
+
+    #gallery {
+        margin-top: 10px; /* Khoảng cách trên cùng 10px */
+    }
+
+    .comment-form input {
+        width: calc(100% - 70px); /* Chiều rộng 100% trừ 70px */
+    }
+
+    .comment-form button {
+        width: 60px; /* Chiều rộng 60px */
+    }
+    .upLoad h1,h2{
+        font-size: 80%;
+    }
+}
